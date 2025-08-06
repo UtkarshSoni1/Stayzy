@@ -5,18 +5,21 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { Route, Routes } from 'react-router-dom'
+import Login from './views/Login.jsx'
+import Home from './views/Home.jsx'
 
 gsap.registerPlugin(useGSAP);
 
 const App = () => {
 
-
   return (
     <div className='min-h-screen flex flex-col'>
-      <Header />
-      <MarketPlace/>
-      {/* <Footer /> */}
-      <Navbar />
+      <Routes>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+      
     </div>
   )
 }
