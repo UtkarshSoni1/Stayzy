@@ -9,7 +9,6 @@ const Navbar = () => {
   const NavbarRef = useRef();
   
   window.addEventListener('wheel',(dets) => {
-    console.log(dets.deltaY);
     if(dets.deltaY < 0){
       gsap.to(NavbarRef.current,{
         y:"0%",

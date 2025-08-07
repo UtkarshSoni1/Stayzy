@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
+import axios from 'axios'
 import Navbar from '../components/Navbar'
 
-const login = () => {
+const Login = () => {
+  const [email, setemail] = useState('');
+  const [password, setpassword] = useState('');
 
 
-    const submitHandler = (e) => {
+    const submitHandler = async (e) => {
         e.preventDefault();
+        const res = await axios.post('http://localhost:5000/login',{email, password});
+        console.log(res.data);
         setemail('');
         setpassword('');
         console.log(email, password);
         
     }
 
-    const [email, setemail] = useState('');
-    const [password, setpassword] = useState('');
   return (
     <>
     <div className='bg-slate-200 h-screen w-full flex flex-col items-center'>
@@ -22,10 +25,12 @@ const login = () => {
         <h1 className='text-2xl font-bold px-8 py-5'>Welcome To StayZy</h1>
         <form className='h-60 w-[90%] bg-slate-400 overflow-hidden flex flex-col items-center' onSubmit={submitHandler}>
             <div className='h-2/3 w-full flex flex-col items-center border-2 rounded-xl overflow-hidden'>
-                <input type="email" name="email" placeholder='Enter Email' className='h-1/2 w-full bg-zinc-300 outline-none px-5 text-xl border-b-2 ' onChange={(e)=>{
+                <input 
+                type="email" name="email" placeholder='Enter Email' className='h-1/2 w-full bg-zinc-300 outline-none px-5 text-xl border-b-2 ' onChange={(e)=>{
                     setemail(e.target.value);
                 }} value={email}/>
-                <input type="password" name="password" placeholder='Enter Password' className='h-1/2 w-full bg-zinc-300 outline-none px-5 text-xl' onChange={(e)=>{
+                <input 
+                type="password" name="password" placeholder='Enter Password' className='h-1/2 w-full bg-zinc-300 outline-none px-5 text-xl' onChange={(e)=>{
                     setpassword(e.target.value);
                 }} value={password}/>
             </div>
@@ -47,4 +52,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
