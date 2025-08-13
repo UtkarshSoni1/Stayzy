@@ -16,7 +16,7 @@ Stayzy is a modern and responsive React web application that helps **students an
 - 🔍 **Explore Listings**: Browse available rooms with filters.
 - 📝 **Room Listings for Owners**: Property owners can add, manage, and delete their listings.
 - ❤️ **Wishlist**: Users can save rooms to their wishlist.
-- 🔐 **Authentication**: Secure login and signup (JWT-based if backend is integrated).
+- 🔐 **Authentication**: Secure login and signup (JWT-based).
 - 📱 **Responsive Design**: Mobile-first design, scales beautifully on all devices.
 - 💬 **Flash Messages**: Real-time feedback for user actions (login, post, delete, etc.)
 
@@ -27,8 +27,8 @@ Stayzy is a modern and responsive React web application that helps **students an
 - **Frontend**: React, Tailwind CSS, React Icons, GSAP (for animations)
 - **State Management**: React Hooks
 - **Routing**: React Router
-- **Backend**: *(optional)* Node.js, Express.js, MongoDB
-- **Authentication**: *(optional)* JWT, bcrypt
+- **Backend**: Node.js, Express.js, MongoDB
+- **Authentication**:JWT, bcrypt
 
 ---
 
