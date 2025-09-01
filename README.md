@@ -5,9 +5,9 @@
   </tr>
 </table>
 
-## Stayzy 🏡
+## StayZ 🏡
 
-Stayzy is a modern and responsive React web application that helps **students and tenants** find rental rooms, and allows **owners** to list their properties. Designed with a mobile-first approach and inspired by platforms like Airbnb, Stayzy bridges the gap between room seekers and property owners with ease.
+StayZ is a modern and responsive React web application that helps **students and tenants** find rental rooms, and allows **owners** to list their properties. Designed with a mobile-first approach and inspired by platforms like Airbnb, StayZ bridges the gap between room seekers and property owners with ease.
 
 ---
 
@@ -27,8 +27,8 @@ Stayzy is a modern and responsive React web application that helps **students an
 - **Frontend**: React, Tailwind CSS, React Icons, GSAP (for animations)
 - **State Management**: React Hooks
 - **Routing**: React Router
-- **Backend**: *(optional)* Node.js, Express.js, MongoDB
-- **Authentication**: *(optional)* JWT, bcrypt
+- **Backend**: Node.js, Express.js, MongoDB
+- **Authentication**: JWT, bcrypt
 
 ---
 
@@ -60,7 +60,6 @@ npm run dev
 Contributions are welcome! Open an issue or submit a pull request for any improvements.
 
 ---
-
 
 ## 🙋‍♂️ Author
 Built with ❤️ by Utkarsh Soni(https://github.com/utkarshsoni1)

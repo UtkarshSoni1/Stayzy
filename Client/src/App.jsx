@@ -8,6 +8,7 @@ import { useGSAP } from '@gsap/react';
 import { Route, Routes } from 'react-router-dom'
 import Login from './views/Login.jsx'
 import Home from './views/Home.jsx'
+import StayDetails from './views/StayDetails.jsx'
 
 gsap.registerPlugin(useGSAP);
 
@@ -18,6 +19,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Login' element={<Login/>}/>
+        <Route path='/User' element={<Home/>}/>
+        <Route path='/User/stay' element={<StayDetails/>}/>
       </Routes>
       
     </div>
